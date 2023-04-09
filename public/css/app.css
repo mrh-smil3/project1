@@ -1,0 +1,126 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Styles */
+nav {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+nav a {
+    color: #fff;
+    margin-left: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/* Hero Section Styles */
+.hero {
+    background-image: url("https://images.unsplash.com/photo-1525101167112-1a2b46ae0b49");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    position: relative;
+}
+
+.hero::after {
+    background-color: rgba(0, 0, 0, 0.5);
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.hero-content {
+    color: #fff;
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.hero-content p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 20px 0;
+}
+
+.hero-content .btn {
+    background-color: #fff;
+    border: none;
+    border-radius: 30px;
+    color: #333;
+    display: inline-block;
+    font-size: 18px;
+    margin-top: 20px;
+    padding: 15px 30px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.hero-content .btn:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Features Section Styles */
+.features {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0;
+}
+
+.feature-box {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    text-align: center;
+    width: 30%;
+}
+
+.feature-box i {
+    color: #333;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.feature-box h2 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.feature-box p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 20px 0;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
